@@ -1,0 +1,60 @@
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Fouad KHIREDDINE"
+title_separator          : "-"
+name                     : &name "Fouad KHIREDDINE"
+description              : &description "R in"
+url                      : https://username.github.io
+baseurl                  : ""
+repository               : ""  # فارغ لإخفاء "This site is open source"
+
+# Author Info
+author:
+  avatar           : ""    
+  name             : "Fouad KHIREDDINE"
+  bio              : "R in"
+  location         : "Algeria"
+  employer         : ""
+  email            : ""
+  
+  # Academic profiles
+  googlescholar    : ""
+  orcid            : ""
+  researchgate     : ""
+  
+  # All other social links removed or empty
+  github           : ""
+  twitter          : ""
+  linkedin         : ""
+  academia         : ""
+  facebook         : ""
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# CSS for hiding any remaining "Open source" footer
+custom_css:
+  - assets/css/custom.css
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
